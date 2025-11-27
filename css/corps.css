@@ -1,0 +1,150 @@
+/* Modernisation de corps.css */
+
+
+/* Tags */
+
+#tagFood {
+    display: inline-block;
+    padding-left: 0;
+    font-style: italic;
+    margin: 0;
+   
+}
+
+li.tag {
+    display: inline-block;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 15px;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2); /* Add drop shadow */
+}
+
+li.tag:hover {
+    border-color: var(--coulB1);
+    background-color: var(--coulA2);
+    color: white;
+}
+
+
+/* Cartes */
+
+div.card {
+    position: relative;
+    width: 220px;
+    height: 300px;
+    float: left;
+    padding: 15px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+div.card:hover {
+    transform: scale(1.05);
+}
+
+
+/* Images dans les cartes */
+
+div.photoCard>img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+/* Galerie */
+
+#galerie {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+#note {
+    display: flex;
+    justify-content: center;
+}
+
+/* Info detail */
+.info {
+    display: flex;
+    justify-content: start;
+    background-color: #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: #aaa 2px 2px 5px;
+    width: 97%;
+}
+
+.critique {
+    display: block;
+    background-color: #e6e6e6;
+    box-shadow: #aaa 2px 2px 5px;
+    padding: 10px;
+    width: fit-content;
+    max-width: 50%;
+    margin: 10px 0;
+    flex-wrap: wrap;
+    word-wrap: break-word; /* Permet de couper les mots trop longs */
+    overflow-wrap: break-word; /* Compatibilité avec d'autres navigateurs */
+    white-space: normal; /* Permet au texte de revenir à la ligne */
+}
+
+/* Critiques impaires alignées à gauche */
+.critique.odd {
+    border-radius: 0px 30px 30px 30px;
+    margin-left: 0;
+    margin-right: auto;
+    text-align: left;
+}
+
+/* Critiques paires alignées à droite */
+.critique.even {
+    border-radius: 30px 0px 30px 30px;
+    margin-left: auto;
+    margin-right: 20px;
+    text-align: right;
+}
+/* Pour les critiques */
+ul .critique li {
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.types{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;    
+    padding: 40px;
+}
+
+.type{
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #e6e6e6;
+    box-shadow: #aaa 2px 2px 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.erreur {
+    border : 1px solid red;  
+    background-color: red;
+    font-weight: bold;
+}
