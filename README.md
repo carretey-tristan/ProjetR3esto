@@ -41,9 +41,3 @@ Site web de recherche, d'évaluation et de gestion de restaurants (projet PHP po
 - Utilisez un environnement local WAMP pour le développement.
 - Vérifier les droits d'écriture pour l'enregistrement d'images si vous activez l'upload.
 
-Si vous voulez, je peux :
-- Mettre à jour d'autres README dans le workspace.
-- Ajouter un script d'installation automatique (import SQL + configuration) ou un petit fichier `SETUP.md`.
-
----
-Dernière mise à jour : README généré automatiquement par l'assistant.
